@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page_oneContainer {
+  display: grid;
+  padding: 10px;
+  place-items: center;
+  width: 100vw;
+  height: auto;
+  background: #fff;
+
+  button {
+    padding: 4px 20px;
+    appearance: none;
+    border-radius: 10px;
+    border: 1px solid rgba(9, 4, 49, 0.9);
+    background: #fff;
+    margin: 10px 5px 10px 0;
+    outline: none;
+  }
+
+  .btn.col {
+    background: rgba(9, 4, 49, 0.2);
+  }
+  .questions {
+    margin: 8px 0;
+    width: 71%;
+    border-bottom: 1px solid silver;
+    padding: 6px 0;
+  }
+  .questions p {
+    font-size: 1.4em;
+    width: 90%;
+    padding: 7px 0;
+    word-spacing: 4px;
+    color: rgba(9, 4, 49, 0.9);
+  }
+  .btnDiv2 {
+    display: none;
+    justify-content: center;
+    padding-top: 11px;
+    width: 70%;
+  }
+  .btnDiv2.open {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .score {
+    font-size: 1.2em;
+    color: rgba(9, 4, 49, 0.9);
+    margin-right: 7px;
+  }
+  .btnDiv {
+    display: flex;
+    justify-content: center;
+    padding-top: 11px;
+    width: 70%;
+  }
+  .btnDiv.clear {
+    display: none;
+  }
+  a {
+    width: 25%;
+  }
+  .butn2 {
+    text-align: center;
+    width: 100%;
+    padding: 12px 2px;
+    background: rgba(9, 4, 49, 0.9);
+    color: white;
+    border-radius: 8px;
+    border: unset;
+    font-size: 0.8em;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .butn {
+    text-align: center;
+    width: 25%;
+    padding: 12px 2px;
+    background: rgba(9, 4, 49, 0.9);
+    color: white;
+    border-radius: 8px;
+    border: unset;
+    font-size: 0.8em;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  h2 {
+    color: rgba(9, 4, 49, 0.9);
+  }
+  @media screen and (max-width: "400px") {
+    .questions {
+      width: 100%;
+    }
+    .questions p {
+      font-size: 1.2em;
+    }
+    .btnDiv,
+    .btnDiv2 {
+      width: 100%;
+    }
+    .butn {
+      width: 50%;
+      font-size: 0.6em;
+    }
+    .butn2 {
+      width: 50%;
+      font-size: 0.6em;
+    }
+    h2 {
+      font-size: 18px;
+      text-decoration: underline;
+    }
+  }
+}

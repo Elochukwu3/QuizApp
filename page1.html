@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="page_oneContainer">
+        <div class="page-wrapper">
+            <h2>Answer the Following Questions</h2>
+            <div class="questions">
+                <p class="text">How would one say goodbye in Spanish?</p>
+                <div class="btnContainer">
+                    <button value="adios" class="btn" onclick="showChoosen($firstBtn,0)">Adios</button>
+                    <button value="hola" class="btn" onclick="showChoosen($firstBtn, 1)">Hola</button>
+                    <button value="au revior" class="btn" onclick="showChoosen($firstBtn, 2)">Au Revoir</button>
+                    <button value="sallr" class="btn" onclick="showChoosen($firstBtn, 3)"> sallr</button>
+                </div>
+            </div>
+            <div class="questions">
+                <p>
+                    Which best selling toy of 1983 caused
+                    hysteria, resulting in riots breaking stores?
+                </p>
+
+                <div>
+                    <button class="btn2" value="cabbage patch kids" onclick="showChoosen($secondtBtn, 0)">cabbage patch
+                        kids</button>
+                    <button class="btn2" value="transformers"
+                        onclick="showChoosen($secondtBtn, 1)">Transformers</button>
+                    <button class="btn2" value="care bearas" onclick="showChoosen($secondtBtn, 2)">Care Bears</button>
+                    <button class="btn2" value="Rubik's cubes" onclick="showChoosen($secondtBtn, 3)"> Rubik's
+                        cubes</button>
+                </div>
+            </div>
+            <div class="questions">
+                <p> What is the hottest planet in our Solar System?
+                </p>
+                <div>
+                    <button class="btn3" value="mercury" onclick="showChoosen($thirdtBtn, 0)">Mecury</button>
+                    <button class="btn3" value="venus" onclick="showChoosen($thirdtBtn, 1)">Venus</button>
+                    <button class="btn3" value="mars" onclick="showChoosen($thirdtBtn, 2)">Mars</button>
+                    <button class="btn3" value="saturn" onclick="showChoosen($thirdtBtn, 3)">Saturn</button>
+                </div>
+            </div>
+            <div class="questions">
+                <p>
+                    In which country was the Caesar salad
+                    invented?
+                </p>
+                <div>
+                    <button type="button" class="btn4" value="italy"
+                        onclick="showChoosen($fourthtBtn, 0)">Italy</button>
+                    <button type="button" class="btn4" value="portugal"
+                        onclick="showChoosen($fourthtBtn, 1)">Portugal</button>
+                    <button type="button" class="btn4" value="mexico"
+                        onclick="showChoosen($fourthtBtn, 2)">Mexico</button>
+                    <button type="button" class="btn4" value="france"
+                        onclick="showChoosen($fourthtBtn, 3)">France</button>
+
+                </div>
+            </div>
+            <div class="questions">
+                <div>
+                    <p>How many Hearts Does An Octopus Have?</p>
+                    <button class="btn5" type="button" value="one" onclick="showChoosen($fifthtBtn, 0)">One</button>
+                    <button class="btn5" type="button" value="two" onclick="showChoosen($fifthtBtn, 1)">Two</button>
+                    <button class="btn5" type="button" value="three" onclick="showChoosen($fifthtBtn, 2)">Three</button>
+                    <button class="btn5" type="button" value="four" onclick="showChoosen($fifthtBtn, 3)">Four</button>
+                </div>
+            </div>
+            <div class="btnDiv">
+                <button class="butn" onclick="submitItem()">Check answers</button>
+            </div>
+            <div class="btnDiv2">
+                <p class="score"></p>
+                <a href="index.html"><button class="butn2" onclick="playAgain()">play agian</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

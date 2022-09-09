@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page_oneContainer {
+  display: grid;
+  padding: 10px;
+  place-items: center;
+  width: 100vw;
+  height: auto;
+  background: #fff;
+}
+.page_oneContainer button {
+  padding: 4px 20px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 10px;
+  border: 1px solid rgba(9, 4, 49, 0.9);
+  background: #fff;
+  margin: 10px 5px 10px 0;
+  outline: none;
+}
+.page_oneContainer .btn.col {
+  background: rgba(9, 4, 49, 0.2);
+}
+.page_oneContainer .questions {
+  margin: 8px 0;
+  width: 71%;
+  border-bottom: 1px solid silver;
+  padding: 6px 0;
+}
+.page_oneContainer .questions p {
+  font-size: 1.4em;
+  width: 90%;
+  padding: 7px 0;
+  word-spacing: 4px;
+  color: rgba(9, 4, 49, 0.9);
+}
+.page_oneContainer .btnDiv2 {
+  display: none;
+  justify-content: center;
+  padding-top: 11px;
+  width: 70%;
+}
+.page_oneContainer .btnDiv2.open {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.page_oneContainer .score {
+  font-size: 1.2em;
+  color: rgba(9, 4, 49, 0.9);
+  margin-right: 7px;
+}
+.page_oneContainer .btnDiv {
+  display: flex;
+  justify-content: center;
+  padding-top: 11px;
+  width: 70%;
+}
+.page_oneContainer .btnDiv.clear {
+  display: none;
+}
+.page_oneContainer a {
+  width: 25%;
+}
+.page_oneContainer .butn2 {
+  text-align: center;
+  width: 100%;
+  padding: 12px 2px;
+  background: rgba(9, 4, 49, 0.9);
+  color: white;
+  border-radius: 8px;
+  border: unset;
+  font-size: 0.8em;
+  font-weight: 600;
+  cursor: pointer;
+}
+.page_oneContainer .butn {
+  text-align: center;
+  width: 25%;
+  padding: 12px 2px;
+  background: rgba(9, 4, 49, 0.9);
+  color: white;
+  border-radius: 8px;
+  border: unset;
+  font-size: 0.8em;
+  font-weight: 600;
+  cursor: pointer;
+}
+.page_oneContainer h2 {
+  color: rgba(9, 4, 49, 0.9);
+}
+@media screen and (max-width: 400px) {
+  .page_oneContainer .questions {
+    width: 100%;
+  }
+  .page_oneContainer .questions p {
+    font-size: 1.2em;
+  }
+  .page_oneContainer .btnDiv,
+.page_oneContainer .btnDiv2 {
+    width: 100%;
+  }
+  .page_oneContainer .butn {
+    width: 50%;
+    font-size: 0.6em;
+  }
+  .page_oneContainer .butn2 {
+    width: 50%;
+    font-size: 0.6em;
+  }
+  .page_oneContainer h2 {
+    font-size: 18px;
+    text-decoration: underline;
+  }
+}/*# sourceMappingURL=style2.css.map */
