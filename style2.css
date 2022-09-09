@@ -109,8 +109,11 @@
     width: 50%;
     font-size: 0.6em;
   }
-  .page_oneContainer .butn2 {
+  .page_oneContainer a {
     width: 50%;
+  }
+  .page_oneContainer .butn2 {
+    width: 100%;
     font-size: 0.6em;
   }
   .page_oneContainer h2 {

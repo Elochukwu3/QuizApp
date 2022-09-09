@@ -46,10 +46,10 @@ function checkValue(newArrs, rightAns) {
   for (let index = 0; index < newArrs.length; index++) {
     const element = newArrs[newArrs.length - 1];
     if (element.value == rightAns) {
-      element.style.background = "green";
+      element.style.background = "rgb(9, 211, 9)";
       score += 1;
     } else {
-      element.style.background = "red";
+      element.style.background = "rgb(231, 63, 119)";
     }
   }
 }
