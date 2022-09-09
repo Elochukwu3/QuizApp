@@ -44,22 +44,51 @@ showResult($fifthtBtn, resultFive);
 
 function checkValue(newArrs, rightAns) {
   for (let index = 0; index < newArrs.length; index++) {
+    
     const element = newArrs[newArrs.length - 1];
     if (element.value == rightAns) {
       element.style.background = "rgb(9, 211, 9)";
       score += 1;
     } else {
       element.style.background = "rgb(231, 63, 119)";
+      // element.value = rightAns;
+      // element.style.background = "blue"
     }
   }
 }
+function showCorrect(arr, correct) {
+  arr.forEach(e => {
+    if (e.value == correct) {
+      e.style.background = "rgb(9, 211, 9)"
+    }
+  });
+  
+}
 function submitItem() {
-  checkValue(resultOne, ans1);
-  checkValue(resultTwo, ans2);
-  checkValue(resultThree, ans3);
-  checkValue(resultFour, ans4);
-  checkValue(resultFive, ans5);
-  btnSubmitCont1.classList.add("clear");
-  btnSubmitCont2.classList.add("open");
-  scoreCont.innerHTML = `You scored ${score}/5 correct answers`;
+  if (resultOne === "" || resultTwo === "" || resultThree === "" || resultFour === "" || resultFive == "") {
+  let notify = document.querySelector(".alert")
+  notify.style.display = "block"
+  setInterval(() => {
+    notify.style.display = "none"
+  }, 2000);
+
+  }else{
+    checkValue(resultOne, ans1);
+    checkValue(resultTwo, ans2);
+    checkValue(resultThree, ans3);
+    checkValue(resultFour, ans4);
+    checkValue(resultFive, ans5);
+    // shows the correct ans
+    showCorrect($firstBtn, ans1)
+    showCorrect($secondtBtn, ans2)
+    showCorrect($thirdtBtn, ans3)
+    showCorrect($fourthtBtn, ans4)
+    showCorrect($fifthtBtn, ans5)
+    btnSubmitCont1.classList.add("clear");
+    btnSubmitCont2.classList.add("open");
+    scoreCont.innerHTML = `You scored ${score}/5 correct answers`;
+  }
+
+ 
+
 }
