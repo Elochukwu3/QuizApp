@@ -43,16 +43,15 @@ showResult($fourthtBtn, resultFour);
 showResult($fifthtBtn, resultFive);
 
 function checkValue(newArrs, rightAns) {
+  let element;
   for (let index = 0; index < newArrs.length; index++) {
-    const element = newArrs[newArrs.length - 1];
-    if (element.value == rightAns) {
-      element.style.background = "rgb(9, 211, 9)";
-      score += 1;
-    } else {
-      element.style.background = "rgb(231, 63, 119)";
-      // element.value = rightAns;
-      // element.style.background = "blue"
-    }
+    element = newArrs[newArrs.length - 1];
+  }
+  if (element.value === rightAns) {
+    element.style.background = "rgb(9, 211, 9)";
+    score += 1;
+  } else {
+    element.style.background = "rgb(231, 63, 119)";
   }
 }
 function showCorrect(arr, correct) {
@@ -90,5 +89,6 @@ function submitItem() {
     btnSubmitCont1.classList.add("clear");
     btnSubmitCont2.classList.add("open");
     scoreCont.innerHTML = `You scored ${score}/5 correct answers`;
+    console.log(score);
   }
 }
